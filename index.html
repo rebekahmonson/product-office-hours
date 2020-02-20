@@ -27,7 +27,7 @@
 		<div id="filters" class="container">
 			<input id="articleSearch" type="text" placeholder="Search for.."></input>
 			<span class="clear sml-button teal-bkg">Clear</span> 
-      <h3>Tags <span id="tags"></span>   
+      <h3>Tags:</h3> <span id="tags"></span>   
     </div>
 
 		<div id="articleTable"></div>
@@ -60,9 +60,10 @@
 		  	<tr class="{{rowNumber}}">
           <td class="light-type">
           
+          
           <h4 class="coral"><a href="{{url}}" target="_blank">{{name}}</a></h4>
           <img class="mug" src="{{photo}}">
-          <p>{{jobtitle}}, <a href="{{orgurl}}" target="_blank">{{org}}</a>
+          <p><strong>{{jobtitle}},</strong> <a href="{{orgurl}}" target="_blank">{{org}}</a>
           <p>{{superpowers}}
           <p class="tag"><strong>Tags:</strong>{{#tags}} <a href="#">{{tag}}</a> {{/tags}}
           <p class="languages"><strong>Languages:</strong> {{languages}}
