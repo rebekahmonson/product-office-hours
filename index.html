@@ -26,7 +26,7 @@
     -->
 		<div id="filters" class="container">
 			<input id="articleSearch" type="text" placeholder="Search for.."></input>
-			<span class="clear sml-button">Clear</span> 
+			<span class="clear sml-button teal-bkg">Clear</span> 
       <h3>Tags <span id="tags"></span>   
     </div>
 
@@ -41,9 +41,9 @@
 	</div><!-- end wrapper -->
 
 	<script id="title" type="text/html">
-    <h2>Need help on a news product challenge?</h2>
-    <h2>Want some career coaching?</h2> 
-    <h2>Need a second opinion on your strategy or idea?</h2>
+    <h2 class="coral">Need help on a news product challenge?</h2>
+    <h2 class="teal">Want some career coaching?</h2> 
+    <h2 class="plum">Need a second opinion on your strategy or idea?</h2>
    
 		<h1><span class="highlighted">{{numArticles}}</span> news product leaders are available to help you!</h1>
 	</script>
@@ -59,13 +59,14 @@
 		  {{#rows}}
 		  	<tr class="{{rowNumber}}">
           <td class="light-type">
+          
+          <h4 class="coral"><a href="{{url}}" target="_blank">{{name}}</a></h4>
           <img class="mug" src="{{photo}}">
-          <a href="{{url}}" target="_blank"><h4>{{name}} </h4></a>
-          {{jobtitle}}, <a href="{{orgurl}}" target="_blank">{{org}}</a>
+          <p>{{jobtitle}}, <a href="{{orgurl}}" target="_blank">{{org}}</a>
           <p>{{superpowers}}
           <p class="tag"><strong>Tags:</strong>{{#tags}} <a href="#">{{tag}}</a> {{/tags}}
           <p class="languages"><strong>Languages:</strong> {{languages}}
-          <p><a href="{{calendarurl}}" target="blank" class="sml-button">Schedule appointment</a>
+          <p><a href="{{calendarurl}}" target="blank" class="md-button">Schedule appointment</a>
           </td>
          </tr>
 		  {{/rows}}

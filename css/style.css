@@ -2,18 +2,16 @@ html{background: #f2f2f2;}
 body {font-family: Helvetica; font-size: .8em; padding: 2em; color: #333;}
 
 h1 {font-size: 48px; margin-bottom: 20px;}
-.highlighted {color: #F96E6C; opacity: 1; transition: opacity .25s ease-in-out;}
+.highlighted {color: #F64747; opacity: 1; transition: opacity .25s ease-in-out;}
 .highlighted:hover {opacity: 0.5;}
-h2{font-size: 2em; line-height: 24px; color: #F96E6C;}
-h4{font-size: 1.5em; line-height: 24px; color: #F96E6C;}
+h2{font-size: 2em; line-height: 1em; color: #F64747;}
+h4{font-size: 1.5em; line-height: 24px; color: #F64747;}
 a {text-decoration: none; color: #333;}
 a:hover {padding-bottom: 1px; border-bottom: 1px dotted #333;}
-p a {color: #F96E6C;}
+p a {color: #F64747;}
 
 
-.light-type {color: #555;} /* #F96E6C */
-.dim {color: #acacac;}
-.fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
+.light-type {color: #444;} /* #F64747 */
 
 #wrapper {margin: 0px auto; max-width: 900px; padding-top: 40px; }
 #filters {padding: 30px 0px; overflow: auto;}
@@ -21,7 +19,7 @@ p a {color: #F96E6C;}
 
 table {border-spacing: 0px; min-width: 90%; margin: 0 auto;}
 th {padding: 10px}
-td, text {padding: 1.2em; font-size: 1em; font-weight: lighter; line-height: 1.3em;}
+td, text {padding: 2em 1.2em; font-size: 1em; font-weight: lighter; line-height: 1.3em;}
 tr {text-align: left; vertical-align: top; padding: 4px 0px;}
 tr:nth-child(2n+2) {background: #fff;}
 .tHeader {cursor: pointer;}
@@ -29,14 +27,19 @@ tr:nth-child(2n+2) {background: #fff;}
 
 input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background-color: transparent; padding: 0px; color: #acacac; font-size: 13px; height: 22px; font-family: Helvetica;}
 
-.sml-button {border-radius: 1px; cursor: pointer; margin-left: 4px; padding: 4px 6px; background-color: #F96E6C; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: Helvetica; font-weight: bold; white-space: nowrap;}
-.sml-button:hover {background: #c45252; border-bottom: transparent;}
-.button-pressed {background: #0CCC96;}
+.sml-button {border-radius: 1px; cursor: pointer; margin: 0 .5em .5em 0; padding: .4em; background-color: #8859b6; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: Helvetica; font-weight: bold; white-space: nowrap;}
+.sml-button:hover {background: #654d7c; padding: .4em; border-bottom: none;}
+.md-button {border-radius: 1px; cursor: pointer; margin: .2em 0; padding: .8em 1em; background-color: #fc5a5a; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: Helvetica; font-weight: bold; white-space: nowrap; display:inline-block;}
+.md-button:hover {background: #dd5858; margin: .2em 0; padding: .8em 1em; border-bottom: none;}
+.button-pressed {background: #654d7c;}
 
 #info {padding: 30px 0px;}
 .mug{object-fit: cover; width: 150px; height: 150px; border-radius: 50%; float: right; margin: 1em;}
-
-
+.coral{color: #fc5a5a;}
+.teal{color:#008080;}
+.teal-bkg{background-color:#008080;}
+.teal-bkg:hover{background-color:#086868;}
+.plum{color: #8859b6;}
 /*card stuff */
 /*
 *,
