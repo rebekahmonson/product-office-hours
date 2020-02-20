@@ -3,8 +3,8 @@ body {font-family: Helvetica; font-size: 16px; line-height: 1.8em; padding: 20px
 
 h1 {font-size: 3em; line-height:1.2em;}
 .highlighted {color: #F64747; opacity: 1; transition: opacity .25s ease-in-out;}
-h2{font-size: 1.9em; line-height: 1.2em;}
-h4{font-size: 1.5em; line-height: 1.2em; margin: 0;}
+h2{font-size: 1.9em; line-height: 1.2em;}4
+h4{font-size: 1.3em; line-height: 1.2em; margin: 0;}
 td h4{font-size: 1.5em; margin: 0 0 .5em 0; display: inline-block;}
 a {color: #F64747; text-decoration: none; padding-bottom: 1px; border-bottom: 1px dotted #F64747;}
 
