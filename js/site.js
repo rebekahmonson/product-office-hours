@@ -82,9 +82,9 @@ $('#title').html(contents)
 }
 
 // takes off the time from the dates
-function cleanDates(data) {
-	data.forEach(function (item) {
-		item.date = item.date.split(" at")[0]
-	})
-return data
-}
+// function cleanDates(data) {
+// 	data.forEach(function (item) {
+// 		item.date = item.date.split(" at")[0]
+// 	})
+// return data
+// }
