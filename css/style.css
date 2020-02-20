@@ -4,7 +4,8 @@ body {font-family: Helvetica; font-size: .8em; padding: 2em; color: #333; overfl
 h1 {font-size: 48px; margin-bottom: 20px;}
 .highlighted {color: #F64747; opacity: 1; transition: opacity .25s ease-in-out;}
 h2{font-size: 2em; line-height: 1em;}
-h4{font-size: 1.5em; margin: 0 0 1em 0; display: inline-block;}
+h4{font-size: 1.5em; margin: 0;}
+td h4{font-size: 1.5em; margin: 0 0 .5em 0; display: inline-block;}
 a {text-decoration: none; color: #333;}
 a:hover {padding-bottom: 1px; border-bottom: 1px dotted #333;}
 p a {color: #F64747;}
