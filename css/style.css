@@ -8,9 +8,10 @@ h4{font-size: 1.3em; line-height: 1.2em; margin: 0;}
 td h4{font-size: 1.5em; margin: 0 0 .5em 0; display: inline-block;}
 a {color: #F64747; text-decoration: none; padding-bottom: 1px; border-bottom: 1px dotted #F64747;}
 
-
-
 .light-type {color: #444;} /* #F64747 */
+.tag {font-size: .8em;}
+.lover{text-transform: lowercase;}
+.FALSE{ display:none; }
 
 #wrapper {margin: 16px auto; max-width: 900px; }
 #filters {padding: 30px 0px; overflow: auto;}

@@ -5,7 +5,8 @@ function existingTagsList(data) {
 	data.forEach(function getTagArray(row) {
 		if (row.tags === "") return
 		row.tags.forEach(function parseTags(tag) {
-			var tagString = tag["tag"]
+			var tagString = tag["tag"];
+      tagString = tagString.toLowerCase();
       if (existingTags.length === 0) existingTags.push(tagString)
       if (existingTags.indexOf(tagString) > -1) return
       existingTags.push(tagString)
@@ -19,9 +20,10 @@ function existingTagsList(data) {
 // individual links in the html
 function separateTags(data) {
 	data.forEach(function findMultiTags(article) {
-		if (article.tags === "") return
-		if (article.tags.indexOf(',') >= 0) {
-			var tagArray = parseTags(article.tags)
+    var tags = article.tags.toLowerCase();
+		if (tags === "") return
+		if (tags.indexOf(',') >= 0) {
+			var tagArray = parseTags(tags)
 			var tagObjArray = arrayIntoObjects(tagArray)
 			article.tags = tagObjArray
 		}
@@ -33,9 +35,9 @@ function separateTags(data) {
 }
 
 // goes through the string tag and separates
-// them based on the comma
+// them based on the comma.
 function parseTags(bulkTags) {
-	tagArray = bulkTags.split(', ')
+	tagArray = bulkTags.split(', ');
 	return tagArray
 }
 
@@ -43,7 +45,7 @@ function parseTags(bulkTags) {
 function arrayIntoObjects(array) {
   var tags = []
   for (var i = 0; i < array.length; ++i)
-    if (array[i] !== undefined) tags.push({ "tag" : array[i]})
+    if (array[i] !== undefined) tags.push({ "tag" : array[i].toLowerCase()})
   return tags
 }
 
@@ -51,7 +53,7 @@ function arrayIntoObjects(array) {
 function getTagMatches(data, selectedTag) {
   var matches = []
   data.forEach(function (element) {
-    var elTags = element.tags
+    var elTags = element.tags;
     if (elTags === "") return
     elTags.forEach(function (tag) {
       if (tag["tag"] === selectedTag.trim()) matches.push(element)
@@ -65,6 +67,7 @@ function getTagMatches(data, selectedTag) {
 // lists the tags
 function drawTags(data) {
   var tag = existingTagsList(data)
+  tag = tag.sort();
   var contents = ich.tags({
     rows: tag
   })
@@ -79,12 +82,5 @@ function pageTitle(data) {
   	numArticles: amount
 	})
 $('#title').html(contents)
-}
 
-// takes off the time from the dates
-// function cleanDates(data) {
-// 	data.forEach(function (item) {
-// 		item.date = item.date.split(" at")[0]
-// 	})
-// return data
-// }
+}
