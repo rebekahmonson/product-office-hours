@@ -1,5 +1,5 @@
 html {background: #f2f2f2; height: 100%; overflow-x: hidden; }
-body {font-family: Helvetica, sans-serif; color:#333; font-size: 16px; line-height: 1.8em; display: flex; flex-direction: column; margin:0;}
+body {font-family: Helvetica, sans-serif; color: #333; font-size: 16px; line-height: 1.8em; display: flex; flex-direction: column; margin:0;}
 
 h1 {font-size: 3em; line-height:1.2em;}
 .highlighted {color: #F64747; opacity: 1; transition: opacity .25s ease-in-out;}
